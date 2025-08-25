@@ -1,0 +1,7 @@
+{
+    "OPENAI_API_BASE": "you_openai_api_base_here",
+    "OPENAI_API_KEY": "your_openai_api_key_here",
+    "MAX_ITERATIONS": 5,
+    "SCORE": 4,
+    "INPUT_CUSTOMER_PROFILE_FILE": "customer_data/customer.csv"
+}
