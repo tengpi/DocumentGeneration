@@ -21,8 +21,6 @@ max_iterations = cfg.max_iterations
 score_threshold = cfg.score
 customer_file = cfg.input_customer_profile_file
 
-<<<<<<< HEAD
-=======
 # doubao_llm = DoubaoLLM()
 if cfg.llm_provider.upper() == "DOUBAO":
     llm_provider = DoubaoLLM()
@@ -31,7 +29,6 @@ elif cfg.llm_provider.upper() == "OPENAI":
 else:
     llm_provider = DoubaoLLM() # default to doubao
 
->>>>>>> 27f8466 (resubmit)
 
 # Create the Summarization Agent
 summarizer_agent = Agent(
@@ -44,12 +41,8 @@ summarizer_agent = Agent(
     You excel at creating personalized, actionable insights for Relationship Managers.
     You are fluent in both Traditional Chinese (Cantonese tone) and British English.""",
     verbose=True,
-<<<<<<< HEAD
-    allow_delegation=False
-=======
     allow_delegation=False,
     llm=llm_provider
->>>>>>> 27f8466 (resubmit)
 )
 
 # Create the Judge Agent
@@ -64,12 +57,8 @@ judge_agent = Agent(
     - Language quality (Traditional Chinese in Cantonese tone & British English)
     You rate reports on a scale of 1-5.""",
     verbose=True,
-<<<<<<< HEAD
-    allow_delegation=False
-=======
     allow_delegation=False,
     llm=llm_provider
->>>>>>> 27f8466 (resubmit)
 )
 
 
@@ -189,32 +178,11 @@ Score criteria:
 
 
 def translate_to_english(chinese_text: str) -> str:
-    """
-    将中文文本翻译成英文
-    
-    Args:
-        chinese_text: 中文文本
-        
-    Returns:
-        英文翻译
-    """
     try:
-        # this will be overridden by self-defined llm endpoint
-        translator_llm = ChatOpenAI(
-            model="gpt-4o",
-            temperature=0.3,  
-            max_tokens=5000
-        )
-        
         messages = [
             {"role": "system", "content": "You are a professional translator specializing in financial and wealth management content. "},
             {"role": "user", "content": f"Translate the following Traditional Chinese text to British English, maintaining the professional tone and all formatting (including bullet points and section headers).\n\n{chinese_text}"}
         ]
-<<<<<<< HEAD
-        
-        response = translator_llm.invoke(messages)
-        return response.content
-=======
         # here we must use absolute model name
         # absolute_model_name = doubao_llm.model.split('/')[-1]
 
@@ -222,7 +190,6 @@ def translate_to_english(chinese_text: str) -> str:
         abolute_model_name = model.split('/')[-1] if '/' in model else model
         result = llm_provider.invoke(messages=messages, model=abolute_model_name)
         return result
->>>>>>> 27f8466 (resubmit)
         
     except Exception as e:
         print(f"Translation error: {str(e)}")
