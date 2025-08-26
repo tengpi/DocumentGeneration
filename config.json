@@ -3,7 +3,7 @@
     "OPENAI_API_KEY": "dummy_key",
     "OPENAI_MODEL": "gpt-4o",
     "DOUBAO_API_ENDPOINT": "https://ark.cn-beijing.volces.com/api/v3/chat/completions", 
-    "DOUBAO_API_KEY": "dummy_key",
+    "DOUBAO_API_KEY": "22e749a8-4d9f-4feb-bcad-84cdd40387c8",
     "DOUBAO_MODEL": "doubao-seed-1-6-250615",
     "LLM_PROVIDER": "DOUBAO",
     "MAX_ITERATIONS": 5,

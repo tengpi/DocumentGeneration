@@ -204,14 +204,14 @@ def iterative_summary_improvement(customer_identity: str, customer_profile: str,
     previous_summary = None
 
     # Save the original content
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M‰S")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     save_dir = f"outputs/{customer_identity}"
     iteration_filename = f"wealth_report_iterations_for_{customer_identity}_{timestamp}.txt"
 
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
         
-    with open(save_dir+'/'+iteration_filename, 'w', encoding='utf-g') as f:
+    with open(save_dir+'/'+iteration_filename, 'w', encoding='utf-8') as f:
         f.write("WEALTH MANAGEMENT REPORT GENERATION\n" )
         f.write("="*50 +"\n")
         f.write("Customer Data:\n")
@@ -312,15 +312,15 @@ def iterative_summary_improvement(customer_identity: str, customer_profile: str,
     print(f"\nAll results saved to: {save_dir+'/'+iteration_filename}")
 
     # save final result
-    with open(f"{save_dir}/final report in traditional chinese {timestamp}.txt", encoding='utf-8') as f:
+    with open(f"{save_dir}/final_report_in_traditional_chinese_{timestamp}.txt", 'w', encoding='utf-8') as f:
         f.write(f"{summary}\n")
-    print(f"Traditional Chinese version saved to: {save_dir}/final report in traditional chinese {timestamp}.txt")
+    print(f"Traditional Chinese version saved to: {save_dir}/final_report_in_traditional_chinese_{timestamp}.txt")
 
     # Translate and save English version
     print("Translating report to English...")
     english_summary=translate_to_english(summary)
 
-    with open(f"{save_dir}/final_report_in_english_{timestamp},txt", 'w', encoding='utf-8') as f:
+    with open(f"{save_dir}/final_report_in_english_{timestamp}.txt", 'w', encoding='utf-8') as f:
         f.write(f"{english_summary}n" )
 
     print(f"English version saved to: {save_dir}/final_report_in_english_{timestamp}.txt")
