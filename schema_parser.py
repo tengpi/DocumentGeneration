@@ -21,7 +21,7 @@ class SchemaParser:
         self.categories = {
             '基礎信息':'Basic Information',
             '互動與偏好':'Interaction & Preferences',
-            '財務数據':'Financial Data',
+            '財務數據':'Financial Data',
             '交易行為':'Transaction Behavior',
             '風險評估':'Risk Assessment'
         }
