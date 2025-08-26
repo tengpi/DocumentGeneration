@@ -1,0 +1,75 @@
+WEALTH MANAGEMENT REPORT GENERATION
+==================================================
+Customer Data:
+Customer Data Analysis:
+
+
+基礎信息(Basic Information):
+- Gender (性别): Male(男性)
+- MS (婚姻狀況): Married(已婚)
+- NRC (Non-resident Chinese， 非香港居民的内地客): N(否(No))
+- age_group (年齡組): 41-50
+- join_bank_date (開戶日期): 2020/7/10
+- ntb (是否新客): N(否(No))
+- industry (行業): MEDICAL
+- occupation (職業): SALES
+- edu_level (受教育水平): COLLEGE
+- cust_lifestyle (這是一個行内分析的客戶類型(生活消費習慣相關)): "Luxury Brand Trendy
+- life_stage (這是一個行内分析的客戶類型(客戶生命周期:FamilyRole，Life stage)): High-end Club
+- proposition (這是一個行内分析的客戶類型(優越私人理財 & 優越理財。一般地，前者與我行有著更深的關聯)): Travel Planner"
+- top_spending_category (最频繁的信用卡消費類別): Elite Working Class
+- VHIS (是否有自愿医保计划): Prestige Private
+- child (有無需要供養的子女): "Travel
+- payroll (是否出糧戶口客户): Dining
+- expire_risk (是否存在XX服務/簽約即将過期): Leisure"
+- language (語言): Y(是(Yes))
+- preferred_channel (偏好的絡渠道): Y(是(Yes))
+- bustrip (是否經常出差): Y(是(Yes))
+- pets (是否有寵物): N(否(No))
+- oversea (是否有海外經歷): Cantonese
+- rel_with_rm (與客戶經理的熟絡程度(客戶&RM 緊密程度，從高到低)): Phone
+- imodel_seg (這是一個行内分析的客戶類型(客戶&bank 緊密程度，從高到低)): Y(是(Yes))
+
+互動與偏好(Interaction & Preferences):
+- optin_channel (客戶接受營銷的渠道): Y(是(Yes))
+- favor_channel (客戶偏好渠道): Y(是(Yes))
+- lead3m (是否在過去三个月有接收到客戶經理電話): Intimate & warm client
+- digital_FX (是否有訪問“外匯”主題的數碼足跡(過去一個月)): Intimate Plus
+- digital_INV (是否有訪問“投資”主題的數碼足跡(過去一個月)): "EDM
+- digital_INS (是否有訪問“保險”主題的數碼足跡(過去一個月)): CALL"
+
+財務數據(財務數據):
+- balance_casa (活期存款): "Mobile App
+- balance_tmd (定期存款): Branch"
+- trb_range (客戶全面理財總值(Total Relationship Balance)): Y(是(Yes))
+- limit_cc (信用卡額度): Y(是(Yes))
+- allocation_inv (客戶資產中投资產品的占比): Y(是(Yes))
+- allocation_cash (客戶資產中現金的占比): Y(是(Yes))
+- asset_class (基金的類型占比:Equity，Bond，Money Market，Others。合100%): >500k
+- income (客戶收入): 100k-500k
+- wealth_persona (這是一個行内分析的客戶類型(投資產品相)): 3M-8M
+- mortgage (是否有超過3M的按揭貸款): 50k-100k
+- hldg_FX (是否有持有“外匯”產品): 80.00%
+- hldg_INV (是否有持有“投資”產品): 20.00%
+- hldg_INS (是否有持有“保險”產品): Equity:40% & Bond:30% & Money Market:20% & Others:10%
+- hldg_INV_BOND (是否有持有“投資”產品中的“債券”): >100k
+- hldg_INV_FUND (是否有持有“投資”產品中的“基金”): Moderate Asset Allocator
+- hldg_INV_SP (是否有持有“投資”產品中的“結構性產品”): Y(是(Yes))
+- WM_visit (是否訪問過Wealth Master): Y(是(Yes))
+- fhc_goal_type (客戶財務儲備的目標類型): Y(是(Yes))
+- fhc_property_type (物業類型): Y(是(Yes))
+- fhc_offus_wealth (其他銀行/財務幾個使用的理財服務): N(否(No))
+
+交易行爲(交易行爲):
+- ins_cashvalue (保險退保價值(cashvalue)): Y(是(Yes))
+- ins_anp (保險費(insurance premium)): Y(是(Yes))
+- trans_security (證券產品交易次數(過去一個月)): N(否(No))
+- recent_maturity (即將到期的產品(接下來兩個月)): Managing Wealth
+- wealth_product_hldg_pref (客戶持有的“基金”、“債券”、“結構性產品”等“投資"產品中,最高的一項): "MORTGAGED
+- IIF_hldg_pref (客戶持有的“保險”、“投資產品”、“外匯”產品中,最高的一項): INVESTMENT_PROPERTY"
+- security_sector (客戶證券賬戶投资股票的行業): STOCKS
+- last_IWS_trans (客戶上一次交易“投資”產品距今時長): 3M–8M
+
+風險評估(Risk Assessment):
+- rpq_level (風險評級): 300K–500K
+

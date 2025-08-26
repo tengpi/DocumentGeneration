@@ -7,8 +7,8 @@ from datetime import datetime
 from schema_parser import SchemaParser
 from config_parser import get_config
 
-from langchain_openai import ChatOpenAI
-from langchain.schema import HumanMessage, SystemMessage
+from doubao_llm import DoubaoLLM
+from openai_llm import OpenAILLM
 
 # get config
 config = get_config()
@@ -21,6 +21,17 @@ max_iterations = cfg.max_iterations
 score_threshold = cfg.score
 customer_file = cfg.input_customer_profile_file
 
+<<<<<<< HEAD
+=======
+# doubao_llm = DoubaoLLM()
+if cfg.llm_provider.upper() == "DOUBAO":
+    llm_provider = DoubaoLLM()
+elif cfg.llm_provider.upper() == "OPENAI":
+    llm_provider = OpenAILLM()
+else:
+    llm_provider = DoubaoLLM() # default to doubao
+
+>>>>>>> 27f8466 (resubmit)
 
 # Create the Summarization Agent
 summarizer_agent = Agent(
@@ -33,7 +44,12 @@ summarizer_agent = Agent(
     You excel at creating personalized, actionable insights for Relationship Managers.
     You are fluent in both Traditional Chinese (Cantonese tone) and British English.""",
     verbose=True,
+<<<<<<< HEAD
     allow_delegation=False
+=======
+    allow_delegation=False,
+    llm=llm_provider
+>>>>>>> 27f8466 (resubmit)
 )
 
 # Create the Judge Agent
@@ -48,7 +64,12 @@ judge_agent = Agent(
     - Language quality (Traditional Chinese in Cantonese tone & British English)
     You rate reports on a scale of 1-5.""",
     verbose=True,
+<<<<<<< HEAD
     allow_delegation=False
+=======
+    allow_delegation=False,
+    llm=llm_provider
+>>>>>>> 27f8466 (resubmit)
 )
 
 
@@ -186,12 +207,22 @@ def translate_to_english(chinese_text: str) -> str:
         )
         
         messages = [
-            SystemMessage(content="You are a professional translator specializing in financial and wealth management content. Translate the following Traditional Chinese text to British English, maintaining the professional tone and all formatting (including bullet points and section headers)."),
-            HumanMessage(content=f"Please translate this wealth management report to British English:\n\n{chinese_text}")
+            {"role": "system", "content": "You are a professional translator specializing in financial and wealth management content. "},
+            {"role": "user", "content": f"Translate the following Traditional Chinese text to British English, maintaining the professional tone and all formatting (including bullet points and section headers).\n\n{chinese_text}"}
         ]
+<<<<<<< HEAD
         
         response = translator_llm.invoke(messages)
         return response.content
+=======
+        # here we must use absolute model name
+        # absolute_model_name = doubao_llm.model.split('/')[-1]
+
+        model = llm_provider.model
+        abolute_model_name = model.split('/')[-1] if '/' in model else model
+        result = llm_provider.invoke(messages=messages, model=abolute_model_name)
+        return result
+>>>>>>> 27f8466 (resubmit)
         
     except Exception as e:
         print(f"Translation error: {str(e)}")
@@ -376,9 +407,9 @@ def load_market_news(input_dir: str="input_docs")-> str:
     
 if __name__ == "__main__":
     # Load market news
-    # market_news = load_market_news()
-    with open('input_docs/market_news_latest.txt', 'r', encoding='utf-8') as f:
-        market_news = f.read().strip()
+    market_news = load_market_news()
+    # with open('input_docs/market_news_latest.txt', 'r', encoding='utf-8') as f:
+    #     market_news = f.read().strip()
 
     # Customer data (already parsed in the task)
     with open(customer_file)as f:

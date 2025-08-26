@@ -1,0 +1,127 @@
+WEALTH MANAGEMENT REPORT GENERATION
+==================================================
+Customer Data:
+Customer Data Analysis:
+
+
+基礎信息(Basic Information):
+- Gender (性别): Male(男性)
+- MS (婚姻狀況): Married(已婚)
+- NRC (Non-resident Chinese， 非香港居民的内地客): Y(是(Yes))
+- age_group (年齡組): 41-50
+- join_bank_date (開戶日期): 2014/1/30
+- ntb (是否新客): N(否(No))
+- industry (行業): CIVIL SERVANT
+- occupation (職業): PSYCHIATRIST
+- edu_level (受教育水平): COLLEGE
+- cust_lifestyle (這是一個行内分析的客戶類型(生活消費習慣相關)): "Fine Diner
+- life_stage (這是一個行内分析的客戶類型(客戶生命周期:FamilyRole，Life stage)): Cafe & Coffee Lover
+- proposition (這是一個行内分析的客戶類型(優越私人理財 & 優越理財。一般地，前者與我行有著更深的關聯)): Investing (FX & Crypto)"
+- top_spending_category (最频繁的信用卡消費類別): Family with Kids
+- VHIS (是否有自愿医保计划): Prestige
+- child (有無需要供養的子女): Savings & investment
+- payroll (是否出糧戶口客户): Y(是(Yes))
+- expire_risk (是否存在XX服務/簽約即将過期): N(否(No))
+- language (語言): Y(是(Yes))
+- preferred_channel (偏好的絡渠道): N(否(No))
+- bustrip (是否經常出差): Mandarin
+- pets (是否有寵物): Phone
+- oversea (是否有海外經歷): Y(是(Yes))
+- rel_with_rm (與客戶經理的熟絡程度(客戶&RM 緊密程度，從高到低)): N(否(No))
+- imodel_seg (這是一個行内分析的客戶類型(客戶&bank 緊密程度，從高到低)): N(否(No))
+
+互動與偏好(Interaction & Preferences):
+- optin_channel (客戶接受營銷的渠道): Unknown
+- favor_channel (客戶偏好渠道): Acquaintance Plus
+- lead3m (是否在過去三个月有接收到客戶經理電話): EDM
+- digital_FX (是否有訪問“外匯”主題的數碼足跡(過去一個月)): others
+- digital_INV (是否有訪問“投資”主題的數碼足跡(過去一個月)): Y(是(Yes))
+- digital_INS (是否有訪問“保險”主題的數碼足跡(過去一個月)): Y(是(Yes))
+
+財務數據(財務數據):
+- balance_casa (活期存款): N(否(No))
+- balance_tmd (定期存款): Y(是(Yes))
+- trb_range (客戶全面理財總值(Total Relationship Balance)): 0-50k
+- limit_cc (信用卡額度): 0-50k
+- allocation_inv (客戶資產中投资產品的占比): >20M
+- allocation_cash (客戶資產中現金的占比): 30k-50k
+- asset_class (基金的類型占比:Equity，Bond，Money Market，Others。合100%): 6.89%
+- income (客戶收入): 93.11%
+- wealth_persona (這是一個行内分析的客戶類型(投資產品相)): Equity:12% & Bond:46% & Money Market:21% & Others: 21%
+- mortgage (是否有超過3M的按揭貸款): >100k
+- hldg_FX (是否有持有“外匯”產品): Dividend Earner
+- hldg_INV (是否有持有“投資”產品): Y(是(Yes))
+- hldg_INS (是否有持有“保險”產品): Y(是(Yes))
+- hldg_INV_BOND (是否有持有“投資”產品中的“債券”): Y(是(Yes))
+- hldg_INV_FUND (是否有持有“投資”產品中的“基金”): N(否(No))
+- hldg_INV_SP (是否有持有“投資”產品中的“結構性產品”): N(否(No))
+- WM_visit (是否訪問過Wealth Master): Y(是(Yes))
+- fhc_goal_type (客戶財務儲備的目標類型): Y(是(Yes))
+- fhc_property_type (物業類型): Y(是(Yes))
+- fhc_offus_wealth (其他銀行/財務幾個使用的理財服務): Legacy
+
+交易行爲(交易行爲):
+- ins_cashvalue (保險退保價值(cashvalue)): N/A
+- ins_anp (保險費(insurance premium)): DEPOSIT
+- trans_security (證券產品交易次數(過去一個月)): N/A
+- recent_maturity (即將到期的產品(接下來兩個月)): N/A
+- wealth_product_hldg_pref (客戶持有的“基金”、“債券”、“結構性產品”等“投資"產品中,最高的一項): >10
+- IIF_hldg_pref (客戶持有的“保險”、“投資產品”、“外匯”產品中,最高的一項): MXI
+- security_sector (客戶證券賬戶投资股票的行業): structure product
+- last_IWS_trans (客戶上一次交易“投資”產品距今時長): inv
+
+風險評估(Risk Assessment):
+- rpq_level (風險評級): Pharmaceuticals & Biotechnology
+
+
+==================================================
+ITERATION 1 -Score: 5/5
+==================================================
+
+Generated Report:
+[Customer Profile]
+• 客戶為41-50歲已婚男性內地客戶（非香港居民），2014年開戶的長期客戶，任職公務員精神科醫生，教育程度大學。生活模式偏向「精緻飲食」，喜愛咖啡文化，消費以「家庭及育兒」為主，顯示家庭責任感強，財務規劃重點在子女儲蓄與投資。
+• 客戶為出糧戶口，持有尊尚自願醫保（Prestige VHIS），並積極參與投資（外匯及加密貨幣為主要投資偏好），同時持有債券及保險產品，數碼足跡顯示過去一個月關注外匯、投資及保險主題，顯示對財富管理有持續關注。
+• 與客戶經理關係尚待加強（緊密程度低），偏好電話溝通，經常出差且有海外經歷，語言以普通話為主。需透過其關注的家庭及投資話題深化互動，提升客戶粘性。
+• 行動建議：定期以電話方式（契合其偏好渠道）分享家庭理財（如子女教育儲備）及外匯投資資訊，結合其「精緻飲食」生活模式，可適時邀請參與相關客戶活動，增進彼此熟悉度。
+
+[Wealth Portfolio]
+• 個人化投資建議：客戶為「股息收入型」投資者，現持有債券（46%）及外匯產品，可適度增配股息型股票基金（如亞太區高股息股基），將股票類資產從12%提升至18%，平衡穩定收益與資本增值，契合其「財富傳承」（Legacy）目標。
+• 資產配置調整建議：目前債券佔比偏高（46%），建議將部分低收益債券轉換為亞洲美元投資級債券（彭博亞洲美元投資級債券指數年初至今升5.8%，收益率4.6%），同時保留貨幣市場工具（21%）以應對流動性需求，形成「債券40%+股票18%+貨幣市場22%+其他20%」的均衡配置。
+• 組合優化機遇：客戶關注外匯及加密貨幣，可介紹與人民幣走勢掛鈎的結構性產品（如USD/CNH觸及式票據），因市場顯示離岸人民幣兌美元技術面支持位7.1，若突破可帶來額外收益；同時檢視現有保險產品是否覆蓋遺產規劃需求，補充與「財富傳承」目標匹配的人壽保單。
+
+[Market News]
+• 人民幣強勢及國際化進展：聯儲局或9月減息、中美關稅暫緩期延長帶動A股上漲，離岸人民幣兌美元升至一個月高位，技術面失守保歷加通道底部，下一支持位7.1。客戶作為內地客戶且持有外匯，需關注USD/CNH波動對資產的影響。
+  - 行動建議：若客戶持有美元資產，可考慮部分轉換為人民幣資產（如人民幣計價存款或債券），鎖定匯率收益；或透過外匯掛鈎投資產品捕捉短期波動機會。
+• 上海房地產政策優化：上海取消外環外限購、提高公積金貸款額度、統一房貸利率等措施刺激樓市需求。客戶消費聚焦「家庭及育兒」，或有改善住房需求。
+  - 行動建議：探討其是否有在滬置業計劃，分析政策放鬆下的購房時機，並介紹相關按揭貸款產品（如優惠利率房貸），結合家庭長期居住規劃。
+• 亞洲美元債券表現穩健：彭博亞洲美元投資級債券指數年初至今升5.8%，收益率4.6%，且新加坡7月CPI僅升0.6%顯示亞洲通脹壓力減弱，央行或維持寬鬆政策，利好債市。客戶現持有債券，可藉此優化債券組合。
+  - 行動建議：推薦增配亞洲美元投資級債券基金，重點關注內地房企及金融機構發行的債券，利用政策利好提升組合整體收益。
+
+Judge Evaluation:
+Score: 5
+Feedback: The report meets all evaluation criteria exceptionally well. [Customer Profile] provides comprehensive insights into the customer's demographics, lifestyle, financial behavior, and relationship dynamics, with clear actionable recommendations tailored to his preferences (e.g., phone communication, family-focused topics). [Wealth Portfolio] offers personalized investment suggestions aligned with his "Dividend Earner" persona and "Legacy" goal, including specific asset allocation adjustments (e.g., increasing dividend stocks, optimizing bond holdings) and product recommendations (e.g., CNH-linked structured products). [Market News] includes 3 highly relevant items (RMB trends, Shanghai property policies, Asian USD bonds) with explicit connections to the customer's background (mainland client, family focus, bond holdings) and actionable advice. Formatting is professional with consistent bullet points, and language quality is excellent (Traditional Chinese, appropriate tone for wealth management). No significant improvements needed.
+
+==================================================
+FINAL RESULT: Perfect score achieved!
+==================================================
+
+FINAL REPORT:
+[Customer Profile]
+• 客戶為41-50歲已婚男性內地客戶（非香港居民），2014年開戶的長期客戶，任職公務員精神科醫生，教育程度大學。生活模式偏向「精緻飲食」，喜愛咖啡文化，消費以「家庭及育兒」為主，顯示家庭責任感強，財務規劃重點在子女儲蓄與投資。
+• 客戶為出糧戶口，持有尊尚自願醫保（Prestige VHIS），並積極參與投資（外匯及加密貨幣為主要投資偏好），同時持有債券及保險產品，數碼足跡顯示過去一個月關注外匯、投資及保險主題，顯示對財富管理有持續關注。
+• 與客戶經理關係尚待加強（緊密程度低），偏好電話溝通，經常出差且有海外經歷，語言以普通話為主。需透過其關注的家庭及投資話題深化互動，提升客戶粘性。
+• 行動建議：定期以電話方式（契合其偏好渠道）分享家庭理財（如子女教育儲備）及外匯投資資訊，結合其「精緻飲食」生活模式，可適時邀請參與相關客戶活動，增進彼此熟悉度。
+
+[Wealth Portfolio]
+• 個人化投資建議：客戶為「股息收入型」投資者，現持有債券（46%）及外匯產品，可適度增配股息型股票基金（如亞太區高股息股基），將股票類資產從12%提升至18%，平衡穩定收益與資本增值，契合其「財富傳承」（Legacy）目標。
+• 資產配置調整建議：目前債券佔比偏高（46%），建議將部分低收益債券轉換為亞洲美元投資級債券（彭博亞洲美元投資級債券指數年初至今升5.8%，收益率4.6%），同時保留貨幣市場工具（21%）以應對流動性需求，形成「債券40%+股票18%+貨幣市場22%+其他20%」的均衡配置。
+• 組合優化機遇：客戶關注外匯及加密貨幣，可介紹與人民幣走勢掛鈎的結構性產品（如USD/CNH觸及式票據），因市場顯示離岸人民幣兌美元技術面支持位7.1，若突破可帶來額外收益；同時檢視現有保險產品是否覆蓋遺產規劃需求，補充與「財富傳承」目標匹配的人壽保單。
+
+[Market News]
+• 人民幣強勢及國際化進展：聯儲局或9月減息、中美關稅暫緩期延長帶動A股上漲，離岸人民幣兌美元升至一個月高位，技術面失守保歷加通道底部，下一支持位7.1。客戶作為內地客戶且持有外匯，需關注USD/CNH波動對資產的影響。
+  - 行動建議：若客戶持有美元資產，可考慮部分轉換為人民幣資產（如人民幣計價存款或債券），鎖定匯率收益；或透過外匯掛鈎投資產品捕捉短期波動機會。
+• 上海房地產政策優化：上海取消外環外限購、提高公積金貸款額度、統一房貸利率等措施刺激樓市需求。客戶消費聚焦「家庭及育兒」，或有改善住房需求。
+  - 行動建議：探討其是否有在滬置業計劃，分析政策放鬆下的購房時機，並介紹相關按揭貸款產品（如優惠利率房貸），結合家庭長期居住規劃。
+• 亞洲美元債券表現穩健：彭博亞洲美元投資級債券指數年初至今升5.8%，收益率4.6%，且新加坡7月CPI僅升0.6%顯示亞洲通脹壓力減弱，央行或維持寬鬆政策，利好債市。客戶現持有債券，可藉此優化債券組合。
+  - 行動建議：推薦增配亞洲美元投資級債券基金，重點關注內地房企及金融機構發行的債券，利用政策利好提升組合整體收益。

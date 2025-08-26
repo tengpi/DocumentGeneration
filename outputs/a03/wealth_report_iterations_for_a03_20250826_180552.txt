@@ -1,0 +1,127 @@
+WEALTH MANAGEMENT REPORT GENERATION
+==================================================
+Customer Data:
+Customer Data Analysis:
+
+
+基礎信息(Basic Information):
+- Gender (性别): Male(男性)
+- MS (婚姻狀況): Single(單身)
+- NRC (Non-resident Chinese， 非香港居民的内地客): Y(是(Yes))
+- age_group (年齡組): 60+
+- join_bank_date (開戶日期): 2000/11/14
+- ntb (是否新客): N(否(No))
+- industry (行業): UNSKILLED
+- occupation (職業): DRIVER-UNCLASSIFIED
+- edu_level (受教育水平): NON-COL
+- cust_lifestyle (這是一個行内分析的客戶類型(生活消費習慣相關)): Michelin & Hotel Diner
+- life_stage (這是一個行内分析的客戶類型(客戶生命周期:FamilyRole，Life stage)): Retired
+- proposition (這是一個行内分析的客戶類型(優越私人理財 & 優越理財。一般地，前者與我行有著更深的關聯)): Prestige Private
+- top_spending_category (最频繁的信用卡消費類別): Others
+- VHIS (是否有自愿医保计划): N(否(No))
+- child (有無需要供養的子女): N(否(No))
+- payroll (是否出糧戶口客户): N(否(No))
+- expire_risk (是否存在XX服務/簽約即将過期): Y(是(Yes))
+- language (語言): Mandarin
+- preferred_channel (偏好的絡渠道): Email
+- bustrip (是否經常出差): Y(是(Yes))
+- pets (是否有寵物): Y(是(Yes))
+- oversea (是否有海外經歷): Y(是(Yes))
+- rel_with_rm (與客戶經理的熟絡程度(客戶&RM 緊密程度，從高到低)): New-to-Me Client
+- imodel_seg (這是一個行内分析的客戶類型(客戶&bank 緊密程度，從高到低)): Acquaintance
+
+互動與偏好(Interaction & Preferences):
+- optin_channel (客戶接受營銷的渠道): DM
+- favor_channel (客戶偏好渠道): Mobile App
+- lead3m (是否在過去三个月有接收到客戶經理電話): N(否(No))
+- digital_FX (是否有訪問“外匯”主題的數碼足跡(過去一個月)): N(否(No))
+- digital_INV (是否有訪問“投資”主題的數碼足跡(過去一個月)): N(否(No))
+- digital_INS (是否有訪問“保險”主題的數碼足跡(過去一個月)): N(否(No))
+
+財務數據(財務數據):
+- balance_casa (活期存款): >500k
+- balance_tmd (定期存款): 100k-500k
+- trb_range (客戶全面理財總值(Total Relationship Balance)): 0-500K
+- limit_cc (信用卡額度): 10k-30k
+- allocation_inv (客戶資產中投资產品的占比): 56.91%
+- allocation_cash (客戶資產中現金的占比): 43.09%
+- asset_class (基金的類型占比:Equity，Bond，Money Market，Others。合100%): N/A
+- income (客戶收入): 50k-100k
+- wealth_persona (這是一個行内分析的客戶類型(投資產品相)): FX Investor
+- mortgage (是否有超過3M的按揭貸款): Y(是(Yes))
+- hldg_FX (是否有持有“外匯”產品): N(否(No))
+- hldg_INV (是否有持有“投資”產品): Y(是(Yes))
+- hldg_INS (是否有持有“保險”產品): Y(是(Yes))
+- hldg_INV_BOND (是否有持有“投資”產品中的“債券”): N(否(No))
+- hldg_INV_FUND (是否有持有“投資”產品中的“基金”): N(否(No))
+- hldg_INV_SP (是否有持有“投資”產品中的“結構性產品”): Y(是(Yes))
+- WM_visit (是否訪問過Wealth Master): N(否(No))
+- fhc_goal_type (客戶財務儲備的目標類型): Protection
+- fhc_property_type (物業類型): LIVE_WITH_FAMILY
+- fhc_offus_wealth (其他銀行/財務幾個使用的理財服務): BOND
+
+交易行爲(交易行爲):
+- ins_cashvalue (保險退保價值(cashvalue)): 100K–500K
+- ins_anp (保險費(insurance premium)): 50K–100K
+- trans_security (證券產品交易次數(過去一個月)): >10
+- recent_maturity (即將到期的產品(接下來兩個月)): MXI
+- wealth_product_hldg_pref (客戶持有的“基金”、“債券”、“結構性產品”等“投資"產品中,最高的一項): structure product
+- IIF_hldg_pref (客戶持有的“保險”、“投資產品”、“外匯”產品中,最高的一項): fx
+- security_sector (客戶證券賬戶投资股票的行業): Basic Materials
+- last_IWS_trans (客戶上一次交易“投資”產品距今時長): <12m
+
+風險評估(Risk Assessment):
+- rpq_level (風險評級): 4
+
+
+==================================================
+ITERATION 1 -Score: 5/5
+==================================================
+
+Generated Report:
+[Customer Profile]
+• 客戶為60歲以上退休男性，非香港居民內地客，2000年開戶的長期客戶（ntb:N），屬「Prestige Private」理財層級，但與現任客戶經理關係較新（rel_with_rm: New-to-Me Client），銀行緊密程度為「Acquaintance」，需透過主動溝通深化信任關係。
+• 生活模式顯示其偏好高級餐飲（Michelin & Hotel Diner），經常出差（bustrip:Y），飼養寵物（pets:Y）且具海外經歷（oversea:Y），可結合這些特點提供旅行保險、高端餐飲優惠等個人化服務，增強客戶粘性。
+• 財務狀況：活期存款(CASA)超過500萬，定期存款(TMD)100-500萬，現金類資產佔比達43.09%，流動性充足；投資資產佔比56.91%，但集中於結構性產品（hldg_INV_SP:Y），缺乏債券、基金等多元化配置（hldg_INV_BOND/FUND:N），存在集中度風險。
+• 保障缺口明顯：未購買自愿醫保(VHIS:N)，作為退休人士，醫療保障需求較高；雖持有保險產品（ins_cashvalue:100K–500K，ins_anp:50K–100K），但需進一步檢視是否與「Protection」財務目標（fhc_goal_type）匹配。
+• 風險提示：存在服務/合約即將到期（expire_risk:Y），需優先跟進續期；按揭貸款超過300萬（mortgage:Y），需關注利率波動對還款壓力的影響。
+• 行為特徵：偏好手機App渠道（favor_channel:Mobile App），但過去一個月無外匯/投資/保險的數碼足跡（digital_FX/INV/INS:N），近三個月未接聽客戶經理電話（lead3m:N），建議透過Email（preferred_channel）及DM（optin_channel）發送市場資訊，提升互動頻率。
+
+[Wealth Portfolio]
+• 投資建議：客戶屬「FX Investor」投資屬性（wealth_persona），但目前未持有外匯產品（hldg_FX:N），可結合近期人民幣走強的市場機會，推薦離岸人民幣結構性存款或外匯掛鈎產品，分散單一貨幣風險，契合其投資偏好。
+• 資產配置調整：現金類資產（43.09%）佔比偏高，建議將部分活期資金轉為貨幣市場基金以提升閒置資金收益；投資組合可參考「平穩型組合」（低至中度風險），適度配置亞洲美元投資級別債券（彭博亞洲美元投資級別債券指數年初至今升5.8%，收益率4.6%），利用客戶現透過其他銀行持有債券（fhc_offus_wealth:BOND）的習慣，引導資產回流本行，實現多元化配置。
+• 組合優化機會：即將到期產品(MXI:recent_maturity)需及時跟進，建議根據客戶風險承受能力（rpq_level:4）續投或轉投同類型結構性產品，並補充配置低波動的債券型基金，降低結構性產品集中風險；檢視現有保險組合，推薦自愿醫保(VHIS)填補醫療保障缺口，同時探討保險現金價值轉換為年金的可行性，為退休生活提供穩定被動收入。
+• 負債管理：客戶按揭貸款超過300萬，近期上海等地出台房地產優化措施（如房貸利率調整），可評估本行按揭 refinancing 方案，爭取更低利率，減少月供支出，釋放資金用於投資或消費。
+
+[Market News]
+• **A股升浪提振人民幣需求** - 美聯儲主席鮑威爾言論暗示9月或減息，美元走軟；中美延長關稅暫緩期90日，帶動A股升浪並推動離岸人民幣匯價升至近一個月高位（USD/CNH:7.1584）。技術面顯示下一支持位7.1水平，建議向客戶介紹與離岸人民幣掛鈎的短期結構性產品，捕捉匯率波動機會，同時匹配其「FX Investor」屬性。
+• **上海公布多項優化房地產措施** - 上海外環外取消限購、提高公積金貸款額度、房貸利率不再區分首套及二套等政策落地，料刺激樓市需求。客戶持有超300萬按揭貸款，可主動分析本行最新房貸利率政策，評估 refinancing 節省利息的空間，減輕還款壓力，提升可支配收入。
+• **新加坡7月CPI按年僅升0.6%** - 亞洲區內通脹壓力減弱（核心CPI升0.5%），為央行維持寬鬆貨幣政策提供空間，利好債市表現。彭博環球成熟市場企業債券指數年初至今升7.4%（收益率4.5%），可建議客戶將部分現金資產配置於投資級企業債券基金，在低利率環境下獲取穩定票息收益，同時分散現有結構性產品的風險。
+
+Judge Evaluation:
+Score: 5
+Feedback: The report meets all evaluation criteria with excellence. All three sections ([Customer Profile], [Wealth Portfolio], [Market News]) are complete and well-structured. The Customer Profile provides insightful analysis of the client's demographics, lifestyle, financial status, protection gaps, and behavioral characteristics, with clear actionable recommendations (e.g., using Email/DM to enhance interaction). The Wealth Portfolio offers personalized investment suggestions aligned with the client's risk profile (rpq_level: 4), investment persona (FX Investor), and existing asset allocation issues (e.g., recommending offshore RMB structured products and adjusting cash holdings to货币市场基金). The Market News section includes 3 highly relevant items, each explicitly linked to the client's situation (e.g., RMB trends for FX preference, property policies for mortgage holders, Singapore CPI for bond allocation). Professional formatting with bullet points ensures readability, and the language is in Traditional Chinese with appropriate Cantonese tone throughout. No significant improvements needed.
+
+==================================================
+FINAL RESULT: Perfect score achieved!
+==================================================
+
+FINAL REPORT:
+[Customer Profile]
+• 客戶為60歲以上退休男性，非香港居民內地客，2000年開戶的長期客戶（ntb:N），屬「Prestige Private」理財層級，但與現任客戶經理關係較新（rel_with_rm: New-to-Me Client），銀行緊密程度為「Acquaintance」，需透過主動溝通深化信任關係。
+• 生活模式顯示其偏好高級餐飲（Michelin & Hotel Diner），經常出差（bustrip:Y），飼養寵物（pets:Y）且具海外經歷（oversea:Y），可結合這些特點提供旅行保險、高端餐飲優惠等個人化服務，增強客戶粘性。
+• 財務狀況：活期存款(CASA)超過500萬，定期存款(TMD)100-500萬，現金類資產佔比達43.09%，流動性充足；投資資產佔比56.91%，但集中於結構性產品（hldg_INV_SP:Y），缺乏債券、基金等多元化配置（hldg_INV_BOND/FUND:N），存在集中度風險。
+• 保障缺口明顯：未購買自愿醫保(VHIS:N)，作為退休人士，醫療保障需求較高；雖持有保險產品（ins_cashvalue:100K–500K，ins_anp:50K–100K），但需進一步檢視是否與「Protection」財務目標（fhc_goal_type）匹配。
+• 風險提示：存在服務/合約即將到期（expire_risk:Y），需優先跟進續期；按揭貸款超過300萬（mortgage:Y），需關注利率波動對還款壓力的影響。
+• 行為特徵：偏好手機App渠道（favor_channel:Mobile App），但過去一個月無外匯/投資/保險的數碼足跡（digital_FX/INV/INS:N），近三個月未接聽客戶經理電話（lead3m:N），建議透過Email（preferred_channel）及DM（optin_channel）發送市場資訊，提升互動頻率。
+
+[Wealth Portfolio]
+• 投資建議：客戶屬「FX Investor」投資屬性（wealth_persona），但目前未持有外匯產品（hldg_FX:N），可結合近期人民幣走強的市場機會，推薦離岸人民幣結構性存款或外匯掛鈎產品，分散單一貨幣風險，契合其投資偏好。
+• 資產配置調整：現金類資產（43.09%）佔比偏高，建議將部分活期資金轉為貨幣市場基金以提升閒置資金收益；投資組合可參考「平穩型組合」（低至中度風險），適度配置亞洲美元投資級別債券（彭博亞洲美元投資級別債券指數年初至今升5.8%，收益率4.6%），利用客戶現透過其他銀行持有債券（fhc_offus_wealth:BOND）的習慣，引導資產回流本行，實現多元化配置。
+• 組合優化機會：即將到期產品(MXI:recent_maturity)需及時跟進，建議根據客戶風險承受能力（rpq_level:4）續投或轉投同類型結構性產品，並補充配置低波動的債券型基金，降低結構性產品集中風險；檢視現有保險組合，推薦自愿醫保(VHIS)填補醫療保障缺口，同時探討保險現金價值轉換為年金的可行性，為退休生活提供穩定被動收入。
+• 負債管理：客戶按揭貸款超過300萬，近期上海等地出台房地產優化措施（如房貸利率調整），可評估本行按揭 refinancing 方案，爭取更低利率，減少月供支出，釋放資金用於投資或消費。
+
+[Market News]
+• **A股升浪提振人民幣需求** - 美聯儲主席鮑威爾言論暗示9月或減息，美元走軟；中美延長關稅暫緩期90日，帶動A股升浪並推動離岸人民幣匯價升至近一個月高位（USD/CNH:7.1584）。技術面顯示下一支持位7.1水平，建議向客戶介紹與離岸人民幣掛鈎的短期結構性產品，捕捉匯率波動機會，同時匹配其「FX Investor」屬性。
+• **上海公布多項優化房地產措施** - 上海外環外取消限購、提高公積金貸款額度、房貸利率不再區分首套及二套等政策落地，料刺激樓市需求。客戶持有超300萬按揭貸款，可主動分析本行最新房貸利率政策，評估 refinancing 節省利息的空間，減輕還款壓力，提升可支配收入。
+• **新加坡7月CPI按年僅升0.6%** - 亞洲區內通脹壓力減弱（核心CPI升0.5%），為央行維持寬鬆貨幣政策提供空間，利好債市表現。彭博環球成熟市場企業債券指數年初至今升7.4%（收益率4.5%），可建議客戶將部分現金資產配置於投資級企業債券基金，在低利率環境下獲取穩定票息收益，同時分散現有結構性產品的風險。

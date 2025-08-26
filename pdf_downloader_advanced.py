@@ -10,6 +10,9 @@ from crewai import Agent, Task, Crew
 
 from config_parser import get_config
 
+from doubao_llm import DoubaoLLM
+from openai_llm import OpenAILLM
+
 # Load configuration at program start
 config = get_config()
 cfg = config.get_config()
@@ -48,23 +51,23 @@ class AdvancedPDFDownloader:
 
         return logger
     
-    def download_pdf(self,url: str,timeout:int = 30)-> Optional[bytes]:
+    def download_pdf(self,url: str,timeout:int = 60)-> Optional[bytes]:
         """Download PDF file"""
         try:
             self.logger.info(f"Downloading PDF from: {url}")
 
             headers ={
-                'user-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
             }
 
-            response = requests.get(url,headers=headers, timeout=timeout)
+            response = requests.get(url, headers=headers, timeout=timeout)
             response.raise_for_status()
 
             self.logger.info(f"Successfully downloaded PDF, size: {len(response.content)} bytes")
             return response.content
         
         except requests.exceptions.RequestException as e:
-            self.logger.error(f"Failed to download PpF: {str(e)}" )
+            self.logger.error(f"Failed to download Pdf: {str(e)}" )
             return None
         
     def extract_text_from_pdf_advanced(self, pdf_content: bytes)-> Dict[str, any]:
@@ -242,6 +245,13 @@ def optimize_market_news_with_llm(raw_content: str)-> str:
     # Set LLM environment variables (if not already set)
     import os
 
+    if cfg.llm_provider.upper() == "DOUBAO":
+        llm_provider = DoubaoLLM()
+    elif cfg.llm_provider.upper() == "OPENAI":
+        llm_provider = OpenAILLM()
+    else:
+        llm_provider = DoubaoLLM() # default to doubao
+
     # Create optimization Agent
     optimizer_agent = Agent(
             role='Market News Content Optimizer',
@@ -252,8 +262,9 @@ def optimize_market_news_with_llm(raw_content: str)-> str:
             - Organizing information in a clear, structured manner
             - Maintaining accuracy while improving readability
             You work with Traditional Chinese financial content.""",
-            verbose=False,
-            allow_delegation=False
+            verbose=True,
+            allow_delegation=False,
+            llm=llm_provider
         )
 
     # Create optimization task
@@ -321,7 +332,7 @@ def download_and_optimize_market_news()-> Tuple[bool, str]:
         optimized_content = optimize_market_news_with_llm(raw_content)
 
         # Create input docs directory if it doesn't exist
-        input_docs_dir ="input docs"
+        input_docs_dir ="input_docs"
         if not os.path.exists(input_docs_dir):
             os.makedirs(input_docs_dir)
 
@@ -346,7 +357,7 @@ def fetch_latest_market_news()-> str:
         Market news text content
     """
     # First try to &ead optimized content from input docs
-    optimized_path ="input docs/market news_latest.txt"
+    optimized_path ="input_docs/market_news_latest.txt"
     if os.path.exists(optimized_path):
         # Check if file is from today
         file_time = datetime.fromtimestamp(os.path.getmtime(optimized_path))
@@ -363,4 +374,6 @@ def fetch_latest_market_news()-> str:
         #Return default content
         return """市場新聞暫時無法獲取。請稍後再試。"""
     
-    
+
+if __name__ == "__main__":
+    fetch_latest_market_news()

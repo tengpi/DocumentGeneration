@@ -9,6 +9,12 @@ from pathlib import Path
 class Config:
     openai_api_base: str
     openai_api_key: str
+    openai_model: str
+    doubao_api_endpoint: str
+    doubao_api_key: str
+    doubao_model: str
+    llm_provider: str
+    max_iterations: int
     score: int
     input_customer_profile_file: str
 
@@ -64,8 +70,13 @@ class ConfigParser:
         
         # Validate required configuration items
         required_keys = [
-            "OPENAI API BASE",
-            "OPENAI_AI_KEY",
+            "OPENAI_API_BASE",
+            "OPENAI_API_KEY",
+            "OPENAI_MODEL",
+            "DOUBAO_API_ENDPOINT",
+            "DOUBAO_API_KEY",
+            "DOUBAO_MODEL",
+            "LLM_PROVIDER",
             "MAX_ITERATIONS",
             "SCORE",
             "INPUT_CUSTOMER_PROFILE_FILE"
@@ -79,6 +90,11 @@ class ConfigParser:
         self.config = Config(
             openai_api_base=self._config_data["OPENAI_API_BASE"],
             openai_api_key=self._config_data["OPENAI_API_KEY"],
+            openai_model=self._config_data["OPENAI_MODEL"],
+            doubao_api_endpoint=self._config_data["DOUBAO_API_ENDPOINT"],
+            doubao_api_key=self._config_data["DOUBAO_API_KEY"],
+            doubao_model=self._config_data["DOUBAO_MODEL"],
+            llm_provider=self._config_data["LLM_PROVIDER"],
             max_iterations=int(self._config_data["MAX_ITERATIONS"]),
             score=int(self._config_data["SCORE"]),
             input_customer_profile_file=self.config_data["INPUT_CUSTOMER_PROFILE_FILE"]
@@ -119,9 +135,13 @@ class ConfigParser:
         if self._config is None:
             self.load()
 
-        os.environ["0PENAI API BASE"]= self._config.openai_api_base
-        os.environ["OPENAI API_KEY"]= self._config.openai_api_key
-        print(f"Environment variables set: OPENAI API_BASE, OPENAI_API_KEY")
+        os.environ["OPENAI_API_BASE"]= self._config.openai_api_base
+        os.environ["OPENAI_API_KEY"]= self._config.openai_api_key
+        os.environ["OPENAI_MODEL"]= self._config.openai_model
+        os.environ["DOUBAO_API_ENDPOINT"]= self._config.doubao_api_endpoint
+        os.environ["DOUBAO_API_KEY"]= self._config.doubao_api_key
+        os.environ["DOUBAO_MODEL"]= self._config.doubao_model
+        print(f"Environment variables set: OPENAI API_BASE, OPENAI_API_KEY, OPENAI_MODEL, DOUBAO_API_ENDPOINT, DOUBAO_API_KEY, DOUBAO_MODEL")
 
     def validate_paths(self) -> bool:
         """ 
