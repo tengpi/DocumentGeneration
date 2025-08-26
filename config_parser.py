@@ -87,7 +87,7 @@ class ConfigParser:
             raise KeyError(f"Missing required config keys: {','.join(missing_keys)}")
 
         # Create Config object
-        self.config = Config(
+        self._config = Config(
             openai_api_base=self._config_data["OPENAI_API_BASE"],
             openai_api_key=self._config_data["OPENAI_API_KEY"],
             openai_model=self._config_data["OPENAI_MODEL"],
@@ -97,7 +97,7 @@ class ConfigParser:
             llm_provider=self._config_data["LLM_PROVIDER"],
             max_iterations=int(self._config_data["MAX_ITERATIONS"]),
             score=int(self._config_data["SCORE"]),
-            input_customer_profile_file=self.config_data["INPUT_CUSTOMER_PROFILE_FILE"]
+            input_customer_profile_file=self._config_data["INPUT_CUSTOMER_PROFILE_FILE"]
         )
 
         return self._config
@@ -200,7 +200,7 @@ def get_config() -> ConfigParser:
     Returns:
         ConfigParser
     """
-    global config_instance
+    global _config_instance
     if _config_instance is None:
         _config_instance = ConfigParser()
     return _config_instance

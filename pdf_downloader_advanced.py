@@ -255,7 +255,7 @@ def optimize_market_news_with_llm(raw_content: str)-> str:
     # Create optimization Agent
     optimizer_agent = Agent(
             role='Market News Content Optimizer',
-            goal='0ptimize and format market news content for better readability',
+            goal='Optimize and format market news content for better readability',
             backstory="""You are an expert financial content editor specializing in:
             - Converting tables to readable text format
             - Removing redundant content
@@ -270,7 +270,7 @@ def optimize_market_news_with_llm(raw_content: str)-> str:
     # Create optimization task
     optimization_task = Task(
         description=f"""Please optimize the following market news content:
-{raw_content[:5000]}  # Limit input length
+{raw_content}  # Limit input length
 
 Requirements:
 1. Remove all metadata and page headers/footers

@@ -1,59 +1,59 @@
-Gender:基礎信息，性别
-MS:基礎信息，婚姻狀況
-NRC:基礎信息，Non-resident Chinese, 非香港居民的内地客
-age_group:基礎信息，年齡組
-join_bank_date:基礎信息，開戶日期
-ntb:基礎信息，是否新客
-industry:基礎信息，行業
-occupation:基礎信息，職業
-edu_level:基礎信息，受教育水平
-cust_lifestyle:基礎信息，這是一個行内分析的客戶類型(生活消費習慣相關)【多選】
-life_stage:基礎信息，這是一個行内分析的客戶類型(客戶生命周期:FamilyRole，Life stage)
-proposition:基礎信息，這是一個行内分析的客戶類型(優越私人理財 & 優越理財。一般地，前者與我行有著更深的關聯)
-top_spending_category:基礎信息，最频繁的信用卡消費類別
-VHIS:基礎信息，是否有自愿医保计划
-child:基礎信息，有無需要供養的子女
-payroll:基礎信息，是否出糧戶口客户
-expire_risk:基礎信息，是否存在XX服務/簽約即将過期
-language:基礎信息，語言
-preferred_channel:基礎信息，偏好的絡渠道
-bustrip:基礎信息，是否經常出差
-pets:基礎信息，是否有寵物
-oversea:基礎信息，是否有海外經歷
-rel_with_rm:基礎信息，與客戶經理的熟絡程度(客戶&RM 緊密程度,從高到低)
-imodel_seg:基礎信息，這是一個行内分析的客戶類型(客戶&bank 緊密程度,從高到低)
-optin_channel:互動與偏好，客戶接受營銷的渠道
-favor_channel:互動與偏好，客戶偏好渠道
-lead3m:互動與偏好，是否在過去三个月有接收到客戶經理電話
-digital鈧附 FX:互動與偏好，是否有訪問“外匯”主題的數碼足跡(過去一個月)
-digital_INV:互動與偏好，是否有訪問“投資”主題的數碼足跡(過去一個月)
-digital_INS:互動與偏好，是否有訪問“保險”主題的數碼足跡(過去一個月)
-balance_casa:財務數據，活期存款
-balance_tmd:財務数據，定期存款
-trb_range:財務數據，客戶全面理財總值(Total Relationship Balance)
-limit_cc:財務数據，信用卡額度
-allocation_inv:財務数據，客戶資產中投资產品的占比
-allocation_cash:财務数據，客戶資產中現金的占比
-asset_class:財務数據，基金的類型占比:Equity，Bond，Money Market，Others。合100%
-income:財務数據，客戶收入
-wealth_persona:財務數據，這是一個行内分析的客戶類型(投資產品相)
-mortgage:财務数據，是否有超過3M的按揭貸款
-hldg_FX:財務數據，是否有持有“外匯”產品
-hldg_INV:財務數據，是否有持有“投資”產品
-hldg_INS:財務數據，是否有持有“保險”產品
-hldg_INV_BOND:財務數據，是否有持有“投資”產品中的“債券”
-hldg_INV_FUND:財務數摅，是否有持有“投資”產品中的“基金”
-hldg_INV SP:財務數據，是否有持有“投資”產品中的“結構性產品”
-WM_visit:財務数據，是否訪問過Wealth Master
-fhc_goal_type:財務數據，客戶財務儲備的目標類型
-fhc_property_type:財務數據，物業類型【多選】
-fhc_offus_wealth:財務數據，其他銀行/財務幾個使用的理財服務
-ins_cashvalue:交易行爲，保險退保價值(cashvalue)
-ins_anp:交易行爲，保險費(insurance premium)
-trans_security:交易行爲，證券產品交易次數(過去一個月)
-recent_maturity:交易行爲，即將到期的產品(接下來兩個月)【多選】
-wealth_product_hldg_pref:交易行爲，客戶持有的“基金”、“債券”、“結構性產品”等“投資"產品中，最高的一項
-IIF_hldg_pref:交易行爲，客戶持有的“保險”、“投資產品”、“外匯”產品中，最高的一項
-security_sector:交易行爲，客戶證券賬戶投资股票的行業
-last_IwS_trans:交易行爲，客戶上一次交易“投資”產品距今時長
-rpq_level:風險評估，風險評級
+Gender:基礎信息,性别
+MS:基礎信息,婚姻狀況
+NRC:基礎信息,Non-resident Chinese， 非香港居民的内地客
+age_group:基礎信息,年齡組
+join_bank_date:基礎信息,開戶日期
+ntb:基礎信息,是否新客
+industry:基礎信息,行業
+occupation:基礎信息,職業
+edu_level:基礎信息,受教育水平
+cust_lifestyle:基礎信息,這是一個行内分析的客戶類型(生活消費習慣相關)【多選】
+life_stage:基礎信息,這是一個行内分析的客戶類型(客戶生命周期:FamilyRole，Life stage)
+proposition:基礎信息,這是一個行内分析的客戶類型(優越私人理財 & 優越理財。一般地，前者與我行有著更深的關聯)
+top_spending_category:基礎信息,最频繁的信用卡消費類別
+VHIS:基礎信息,是否有自愿医保计划
+child:基礎信息,有無需要供養的子女
+payroll:基礎信息,是否出糧戶口客户
+expire_risk:基礎信息,是否存在XX服務/簽約即将過期
+language:基礎信息,語言
+preferred_channel:基礎信息,偏好的絡渠道
+bustrip:基礎信息,是否經常出差
+pets:基礎信息,是否有寵物
+oversea:基礎信息,是否有海外經歷
+rel_with_rm:基礎信息,與客戶經理的熟絡程度(客戶&RM 緊密程度，從高到低)
+imodel_seg:基礎信息,這是一個行内分析的客戶類型(客戶&bank 緊密程度，從高到低)
+optin_channel:互動與偏好,客戶接受營銷的渠道
+favor_channel:互動與偏好,客戶偏好渠道
+lead3m:互動與偏好,是否在過去三个月有接收到客戶經理電話
+digital_FX:互動與偏好,是否有訪問“外匯”主題的數碼足跡(過去一個月)
+digital_INV:互動與偏好,是否有訪問“投資”主題的數碼足跡(過去一個月)
+digital_INS:互動與偏好,是否有訪問“保險”主題的數碼足跡(過去一個月)
+balance_casa:財務數據,活期存款
+balance_tmd:財務數據,定期存款
+trb_range:財務數據,客戶全面理財總值(Total Relationship Balance)
+limit_cc:財務數據,信用卡額度
+allocation_inv:財務數據,客戶資產中投资產品的占比
+allocation_cash:財務數據,客戶資產中現金的占比
+asset_class:財務數據,基金的類型占比:Equity，Bond，Money Market，Others。合100%
+income:財務數據,客戶收入
+wealth_persona:財務數據,這是一個行内分析的客戶類型(投資產品相)
+mortgage:財務數據,是否有超過3M的按揭貸款
+hldg_FX:財務數據,是否有持有“外匯”產品
+hldg_INV:財務數據,是否有持有“投資”產品
+hldg_INS:財務數據,是否有持有“保險”產品
+hldg_INV_BOND:財務數據,是否有持有“投資”產品中的“債券”
+hldg_INV_FUND:財務數據,是否有持有“投資”產品中的“基金”
+hldg_INV_SP:財務數據,是否有持有“投資”產品中的“結構性產品”
+WM_visit:財務數據,是否訪問過Wealth Master
+fhc_goal_type:財務數據,客戶財務儲備的目標類型
+fhc_property_type:財務數據,物業類型【多選】
+fhc_offus_wealth:財務數據,其他銀行/財務幾個使用的理財服務
+ins_cashvalue:交易行爲,保險退保價值(cashvalue)
+ins_anp:交易行爲,保險費(insurance premium)
+trans_security:交易行爲,證券產品交易次數(過去一個月)
+recent_maturity:交易行爲,即將到期的產品(接下來兩個月)【多選】
+wealth_product_hldg_pref:交易行爲,客戶持有的“基金”、“債券”、“結構性產品”等“投資"產品中,最高的一項
+IIF_hldg_pref:交易行爲,客戶持有的“保險”、“投資產品”、“外匯”產品中,最高的一項
+security_sector:交易行爲,客戶證券賬戶投资股票的行業
+last_IWS_trans:交易行爲,客戶上一次交易“投資”產品距今時長
+rpq_level:風險評估,風險評級

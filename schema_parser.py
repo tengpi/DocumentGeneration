@@ -38,7 +38,7 @@ class SchemaParser:
         except Exception as e:
             print(f"Error loading schema file: {e}")
 
-    def parseschema(self, schema_content: str):
+    def parse_schema(self, schema_content: str):
         """Parse schema content"""
         lines = schema_content.strip().split('\n')
 
@@ -59,7 +59,7 @@ class SchemaParser:
                         # Check if it's a multi-select field
                         is_multi_select ='【多選】'in description
                         if is_multi_select:
-                            description = description.replace('【多選】', '').stríp()
+                            description = description.replace('【多選】', '').strip()
                         
                         # Create field schema
                         self.schema[field_name]= Fieldschema(
@@ -69,7 +69,7 @@ class SchemaParser:
                             is_multi_select=is_multi_select
                         )
                             
-    def parsecsv_data(self, csv_content: str) -> Dict[str, Any]:
+    def parse_csv_data(self, csv_content: str) -> Dict[str, Any]:
         """Parse customer data in CSV format"""
         lines = csv_content.strip().split('\n')
         if len(lines)< 2:
@@ -122,7 +122,7 @@ class SchemaParser:
         sections = ["Customer Data Analysis:\n"]
 
         # Output categories in predefined order
-        category_order = ['基礎信息','互動與偏好','財務数據','交易行為','風險評估']
+        category_order = ['基礎信息','互動與偏好','財務數據','交易行爲','風險評估']
                           
         for category in category_order:
             if category in categorized_data:
